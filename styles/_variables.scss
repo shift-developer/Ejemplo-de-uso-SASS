@@ -1,0 +1,20 @@
+$color-primary: darkgrey;
+$color-secondary: maroon;
+$color-background: lightyellow;
+
+%button {
+    padding: 10px;
+    border: 2px solid $color-secondary;
+    background-color: white;
+}
+
+.button- {
+    &primary {
+        @extend %button;
+        background-color: $color-primary;
+    }
+    &secondary {
+        @extend %button;
+        background-color: $color-secondary;
+    }
+}
